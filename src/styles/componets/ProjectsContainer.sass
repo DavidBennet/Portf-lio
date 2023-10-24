@@ -1,15 +1,9 @@
 @use '../variables'
 @use '../mixins'
 
-#main-content
-    background-color: variables.$bg-color
-    flex: 2 1 0
-    border-radius: variables.$container-border-radius
-    padding: 3rem
-    
-    section
-        display: flex
-        flex-direction: column
+.projects-container
+    display: flex
+    flex-direction: column
 
     h2
         color: variables.$text-color
@@ -18,6 +12,7 @@
         justify-content: start
         gap: 1rem
         margin-bottom: 1.5rem
+        margin-top: 1.5rem
 
         &:after
             @include mixins.gradient-border
@@ -27,11 +22,8 @@
         margin-bottom: 1rem
         line-height: 1.4rem
 
-    li
-        color: variables.$text-color-secundary
-        margin-bottom: 1rem
-        line-height: 1.4rem
-        list-style: none
 
-        strong
-            color: variables.$text-color
+    .btn
+        @include mixins.btn
+        align-self: start
+        margin-top: 1rem

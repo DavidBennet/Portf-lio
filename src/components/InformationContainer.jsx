@@ -13,7 +13,7 @@ export function InformationContainer() {
             </div>
             
             <div id='info-card'>
-                <AiOutlineMail id='mail-icon'/>
+                <AiOutlineMail id='email-icon'/>
                 <div>
                     <h3>Email</h3>
                     <p>srdavidbennet@gmail.com</p>
